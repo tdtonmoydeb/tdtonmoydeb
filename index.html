@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <title>Tonmoy Deb</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Files/fontawesome/CSS/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="overlay">
+            <span class="desc">meet the designer</span>
+            <div class="divder"></div>
+            <h1 class="logo">Tonmoy Deb</h1>
+
+            <ul class="link-bar">
+                <li><a href="https://github.com/tdtonmoydeb" class="link" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a></li>
+                <li><a href="https://facebook.com/tonmoydebtd" class="link" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a></li>
+                <li><a href="https://linkedin.com/in/tdtonmoydeb" class="link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a></li>
+                <li><a href="mailto:tdtonmoydeb@gmail.com" class="link" target="_blank">
+                        <i class="fas fa-envelope"></i>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="js/jquery.ripples.js"></script>
+
+    <script>
+        $('.box').ripples({
+            // Image Url
+            imageUrl: null,
+            // The width and height of the WebGL texture to render to.
+            // The larger this value, the smoother the rendering and the slower the ripples will propagate.
+            resolution: 512,
+            // The size (in pixels) of the drop that results by clicking or moving the mouse over the canvas.
+            dropRadius: 10,
+            // Basically the amount of refraction caused by a ripple.
+            // 0 means there is no refraction.
+            perturbance: 0.05,
+            // Whether mouse clicks and mouse movement triggers the effect.
+            interactive: true,
+            // The crossOrigin attribute to use for the affected image.
+            crossOrigin: ''
+
+        });
+
+    </script>
+</body>
+
+</html>
